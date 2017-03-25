@@ -1,0 +1,17 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+dependencies {
+    testCompile("junit:junit:$jUnitVersion")
+    testCompile("org.assertj:assertj-core:$assertJVersion")
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.14.1'
+}
