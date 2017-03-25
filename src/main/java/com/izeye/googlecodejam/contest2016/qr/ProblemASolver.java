@@ -25,6 +25,10 @@ public class ProblemASolver {
 
 	static String solve(String testCaseInput) {
 		int number = Integer.parseInt(testCaseInput);
+		return solve(number);
+	}
+
+	private static String solve(int number) {
 		if (number == 0) {
 			return "INSOMNIA";
 		}
